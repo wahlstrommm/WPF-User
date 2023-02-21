@@ -24,6 +24,17 @@ namespace WpfApp2.View
         {
             InitializeComponent();
             DataContext = PersonalModel.GetPersonal();
+            var test = PersonalModel.GetPersonal();
+            var column = new DataGridTextColumn();
+            MyGrid.Columns.Add(column);
+            PersonalModel item = new PersonalModel();
+            item.Email = "true";
+            item.Fname = "test";
+            item.Lname = "test";
+            MyGrid.Items.Add(item);
+            // MyGrid.Items.Add(new PersonalModel { Fname = "b.1", Lname = "b.2", Email = "b.3" });
+
+           // MyGrid.ItemsSource=(test.Fname);
         }
     }
 }

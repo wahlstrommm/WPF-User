@@ -18,13 +18,14 @@
             </RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <DataGrid ItemsSource="{Binding Source=personal}" Grid.Column="1" Grid.Row="1" AutoGenerateColumns="False">
+        <DataGrid x:Name="MyGrid" Grid.Column="1" Grid.Row="1" AutoGenerateColumns="False">
             
         <DataGrid.Columns>
                 <DataGridTextColumn Header="Förnamn" Binding="{Binding Fname}"/>
                 <DataGridTextColumn Header="Efternamn" Binding="{Binding Lname}"/>
                 <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
         </DataGrid.Columns>
+            
         </DataGrid>
         <Label Content="{Binding Path=Fname}" Grid.Column="0" FontSize="20"></Label>
         <Label Content="{Binding Path=Lname}" Grid.Column="1" FontSize="20"></Label>

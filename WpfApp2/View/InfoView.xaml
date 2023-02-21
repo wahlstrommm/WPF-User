@@ -29,9 +29,21 @@
         <Label  x:Name="userText" Grid.Row="1" Grid.Column="1" FontSize="20"></Label>
         <Label x:Name="confirmText" Grid.Row="1" Grid.Column="1" FontSize="20"></Label>
 
-        <Label  Grid.Row="0" Name="FnameResult" Grid.Column="2" FontSize="20"></Label>
-        <Label Grid.Row="1" Name="LnameResult" Grid.Column="2" FontSize="20"></Label>
-        <Label Grid.Row="2" Name="AgeResult" Grid.Column="2" FontSize="20"></Label>
-        <Label Grid.Row="3" Name="EmailResult" Grid.Column="2" FontSize="20"></Label>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label  Grid.Row="0" Name="FnameResult" Grid.Column="0" FontSize="20"></Label>
+            <Label Grid.Row="1" Name="LnameResult" Grid.Column="0" FontSize="20"></Label>
+            <Label Grid.Row="2" Name="AgeResult" Grid.Column="1" FontSize="20"></Label>
+            <Label Grid.Row="3" Name="EmailResult" Grid.Column="1" FontSize="20"></Label>
+        </Grid>
     </Grid>
 </UserControl>
+
+       
